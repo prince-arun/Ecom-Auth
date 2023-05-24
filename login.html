@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>login page</title>
+    <link rel="stylesheet" href="./styles/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <h1>login page</h1>
@@ -16,6 +23,7 @@
           name="email"
           id="email"
           placeholder="Enter email"
+          class="inputbox"
         /><br />
         <small id="sEmail"></small>
       </p>
@@ -26,11 +34,18 @@
           name="password"
           id="password"
           placeholder="Password"
+          class="inputbox"
         /><br />
         <small id="s1Password"></small>
       </p>
       <p>
-        <button id="submitBtn">log in</button>
+        <label
+          >Not yet registered!,
+          <a href="./register.html">Click here to Sign-up</a>
+        </label>
+      </p>
+      <p>
+        <button id="submitBtn">Log in</button>
       </p>
     </form>
 
