@@ -5,101 +5,157 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration</title>
+    <link rel="stylesheet" href="./styles/register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h2>Forms</h2>
+    <h2>Register New User</h2>
     <form action="#" id="form">
-      <p>
-        <label for="username">Enter username</label><br />
-        <input
-          type="text"
-          name="fullname"
-          id="username"
-          placeholder="Enter username"
-        />
-        <br />
-        <small id="sUser"></small>
-      </p>
-      <p>
-        <label for="age">Enter Age</label><br />
-        <input type="number" name="age" id="age" placeholder="Age" /><br />
-        <small id="sAge"></small>
-      </p>
-      <p>
-        <label for="gender">Gender</label><br />
+      <div class="row">
+        <div class="box">
+          <p>
+            <label for="username">First Name</label><br /><br />
+            <input
+              type="text"
+              name="firstname"
+              id="username"
+              placeholder="Enter First Name"
+              class="inputbox"
+            />
+            <br />
+            <small id="sUser"></small>
+          </p>
+        </div>
+        <div class="box">
+          <p>
+            <label for="lastname">Last Name</label><br /><br />
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Enter Last Name"
+              class="inputbox"
+            />
+            <br />
+            <small id="s2User"></small>
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <p>
+          <label for="gender">Gender</label><br />
+          <br />
+          <input
+            class="gender"
+            type="radio"
+            name="gender"
+            id="male"
+            value="male"
+            class="inputbox"
+          />
+          <label for="male">Male</label>
 
-        <input
-          class="gender"
-          type="radio"
-          name="gender"
-          id="male"
-          value="male"
-        />
-        <label for="male">Male</label>
+          <input
+            class="gender"
+            type="radio"
+            name="gender"
+            id="female"
+            value="female"
+          />
+          <label for="female">Female</label>
 
-        <input
-          class="gender"
-          type="radio"
-          name="gender"
-          id="female"
-          value="female"
-        />
-        <label for="female">Female</label>
+          <input
+            class="gender"
+            type="radio"
+            name="gender"
+            id="others"
+            value="others"
+          />
+          <label for="others">others</label><br />
+          <small id="sGender"></small>
+        </p>
+      </div>
 
-        <input
-          class="gender"
-          type="radio"
-          name="gender"
-          id="others"
-          value="others"
-        />
-        <label for="others">others</label><br />
-        <small id="sGender"></small>
-      </p>
-      <p>
-        <label for="email">Enter email</label><br />
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Enter email"
-        /><br />
-        <small id="sEmail"></small>
-      </p>
-      <p>
-        <label for="password">Password</label><br />
-        <input
-          type="password"
-          name="password"
-          id="password"
-          placeholder="Password"
-        /><br />
-        <small id="s1Password"></small>
-      </p>
-      <p>
-        <label for="cnfmPassword">Confirm Password</label><br />
-        <input
-          type="password"
-          name="confirmPassword"
-          id="cnfmPassword"
-          placeholder="confirm Password"
-        /><br />
-        <small id="s2Password"></small>
-      </p>
-
-      <p>
-        <input type="checkbox" name="agree" id="agree" />
-        <label for="agree">I agree the Terms and Conditions</label><br />
-        <small id="terms"></small>
-      </p>
-      <p>
-        Already registered, <a href="./login.html">Click here to Sign In</a>
-      </p>
-
-      <p>
-        <button id="submitBtn">Register</button>
-        <button id="clrBtn">Clear</button>
-      </p>
+      <div class="row">
+        <div class="box">
+          <p>
+            <label for="age">Enter Age</label><br />
+            <input
+              type="number"
+              name="age"
+              id="age"
+              placeholder="Age"
+              class="inputbox"
+            /><br />
+            <small id="sAge"></small>
+          </p>
+        </div>
+        <div class="box">
+          <p>
+            <label for="email">Enter email</label><br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter email"
+              class="inputbox"
+            /><br />
+            <small id="sEmail"></small>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box">
+          <p>
+            <label for="password">Password</label><br />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              class="inputbox"
+            /><br />
+            <small id="s1Password"></small>
+          </p>
+        </div>
+        <div class="box">
+          <p>
+            <label for="cnfmPassword">Confirm Password</label><br />
+            <input
+              type="password"
+              name="confirmPassword"
+              id="cnfmPassword"
+              placeholder="confirm Password"
+              class="inputbox"
+            /><br />
+            <small id="s2Password"></small>
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <p>
+          <input type="checkbox" name="agree" id="agree" />
+          <label for="agree">I agree the Terms and Conditions</label><br />
+          <small id="terms"></small>
+        </p>
+      </div>
+      <div class="box">
+        <p>
+          <label
+            >Already registered,
+            <a href="./login.html">Click here to Sign In</a>
+          </label>
+        </p>
+      </div>
+      <div class="row">
+        <div class="box"><button id="submitBtn">Register</button></div>
+        <div class="box"><button id="clrBtn">Clear</button></div>
+      </div>
     </form>
 
     <script>
@@ -107,6 +163,7 @@
       let form = document.querySelector("form");
       let btn = document.querySelector("#submitBtn");
       let username = document.querySelector("#username");
+      let lastname = document.querySelector("#lastname");
       let age = document.querySelector("#age");
       let gender = document.querySelectorAll(".gender");
       let email = document.querySelector("#email");
@@ -119,6 +176,7 @@
         e.preventDefault();
         //--------------------------username-------------------------
         let sUser = document.querySelector("#sUser");
+        username.value += lastname.value;
         if (username.value.length) {
           sUser.innerHTML = username.value;
           sUser.style.color = "green";
